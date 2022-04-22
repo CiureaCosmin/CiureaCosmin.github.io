@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <title>Orar</title>
+<link rel="stylesheet" href="orar.css">
+</head>
+<body>
+
+<h1 style=text-align:center>Orar FSEGA</h1>
+<hr>
+<table style="width:100%">
+  <tr>  <!-- Zilele -->
+    <th>Ora</th>
+    <th>Luni</th>
+    <th>Marti</th>
+    <th>Miercuri</th>
+	<th>Joi</th>
+	<th>Vineri</th>
+  </tr>
+  
+  
+  <tr> <!-- Ora 8:00-9:30-->
+    <td>8:00-9:30</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td><a href="https://us02web.zoom.us/j/4069645030" target="_blank">Baze de date in economie</a></td>
+	<td></td>
+  </tr>
+  
+  
+  <tr> <!-- Ora 9:40-11:10-->
+    <td>9:40-11:10</td>
+    <td><a href="https://us02web.zoom.us/j/4409572885" target="_blank">ECONOMIE COMPORTAMENTALA</a></td>
+	<td></td>
+    <td><a href="https://us02web.zoom.us/j/4069645030" target="_blank">BAZE DE DATE IN ECONOMIE</a></td>
+	<td><a href="https://us02web.zoom.us/j/89931686705" target="_blank">Sisteme de operare</a></td>
+	<td></td>
+    
+    </tr>
+  
+  
+  <tr> <!-- Ora 11:20-12:50-->
+     <td> 11:20-12:50</td>
+	 <td><a href="https://us02web.zoom.us/j/84832343036" target="_blank">PROGRAMARE ORIENTATA OBIECT</a></td>
+	 <td><a href="https://us02web.zoom.us/j/82831926342" target="_blank">ENGLEZA<sup>SP</sup></a></td>
+	 <td></td>
+	 <td><a href=" https://us02web.zoom.us/j/85901274429" target="_blank">Programare orientata obiect</a></td>
+	 <td></td>
+   </tr>
+ 
+ 
+  <tr> <!-- 12:50-14:00-->
+     <td> 12:50-14:00</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+ </tr>
+ 
+ 
+  <tr> <!--Ora 14:00-15:30-->
+     <td> 14:00-15:30</td>
+	 <td><a href="https://us02web.zoom.us/j/8050282435SISTEME" target="_blank">SISTEME DE OPERARE</a></td>
+	 <td><a href="https://econ-ubbcluj-ro.zoom.us/j/9899058633" target="_blank">Tehnologii web front-end<sup>SI</sup></a></td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+ </tr>
+ 
+ 
+  <tr> <!--Ora 15:40-17:10-->
+     <td> 15:40-17:10</td>
+	 <td><a href="https://econ-ubbcluj-ro.zoom.us/j/5158492307" target="_blank">TEHNOLOGII WEB FRONT-END</a><br>3ZVJF4</td>
+	 <td><a href="https://us02web.zoom.us/j/82831926342" target="_blank">Engleza<sup>SP</sup></a></td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+ </tr>
+ 
+ 
+  <tr> <!--Ora 17:20-18:50-->
+     <td> 17:20-18:50</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+ </tr>
+ 
+ 
+  <tr> <!--Ora 19:00-20:30-->
+     <td> 19:00-20:30</td>
+	 <td></td>
+	 <td></td>
+	 <td><a href="https://us02web.zoom.us/j/9742988740" target="_blank">Economie comportamentala<sup>SI</sup></a></td>
+	 <td></td>
+	 <td></td>
+ </tr>
+</table>
+<h1 style align="center" id="time">Ce saptamana e asta?</h1>
+
+<div class="wrapper">
+<button type="button" onClick="myFunction()">vai</button>
+</div>
+
+
+
+<script>
+	function myFunction() {
+		azi = new Date();
+		var primaZi = new Date("01/01/2022");
+		var numarzile = Math.floor((azi - primaZi) / (24 * 60 * 60 * 1000));
+		var rezultat = Math.ceil(( azi.getDay() + 1 + numarzile) / 7);
+
+		if(rezultat % 2 == 0) {
+			document.getElementById('time').innerHTML = "Aceasta saptamana este : PARA"
+		}
+		else {
+			document.getElementById('time').innerHTML = "Aceasta saptamana este : IMPARA"
+		}
+
+
+
+	}
+</script>
+
+</body>
+</html>
