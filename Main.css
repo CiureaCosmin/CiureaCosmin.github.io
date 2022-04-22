@@ -16,7 +16,6 @@ body{
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 5px;
     background-color: #737373;
     color: #fff;
@@ -79,7 +78,7 @@ ul  {
     text-align: center;
 }
 .dropdown li:hover {
-    background-color:
+    background-color: green;
 }
 .services:hover .dropdown {
     display: block;
