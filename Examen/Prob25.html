@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 25</title>
+    <link href="PaginaCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    25.Inserați un link și un buton. Butonul sa aibă colturile
+    rotunjite. In momentul in care dai click pe buton sa se ascundă
+    link-ul
+
+</div>
+<br>
+<style>
+    #but {
+        border-radius: 25%;
+    }
+</style>
+<a href='http://facebook.com' id="lnk">Link</a>
+<button id="but">Buton</button>
+<script>
+    document.getElementById('but').addEventListener('click', hide);
+
+    function hide() {
+        if (document.getElementById("lnk").style.display == "none"
+    )
+        {
+            document.getElementById("lnk").style.display = "inline";
+        }
+    else
+        {
+            document.getElementById("lnk").style.display = "none";
+        }
+    }
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 21</title>
+    <link href="PaginaCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    21.Inserati un text formatat cu fontul Century, dimensiunea 20px. In
+    momentul in care se da click pe suprafata lui se va formata cu
+    italic si va schimba alinierea la dreapta.
+
+</div>
+<br>
+<style>
+    #p{
+        font-family: Century;
+        font-size: 20px;
+    }
+</style>
+
+
+<div id="div"><span id="p">Text formatat</span></div>
+<script>
+    document.getElementById('p').addEventListener('click', dreapta);
+    function dreapta (){
+        document.getElementById('div').style.textAlign='right';
+        document.getElementById('div').style.fontStyle='italic';
+    }
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>

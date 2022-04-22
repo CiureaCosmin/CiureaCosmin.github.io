@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 7</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    7.Inserati un textbox. In interiorul textboxului textul va fi
+    boldat
+    In momentul in care se iese din textbox sa se afiseze valoare
+    introdusa intr-un mesaj de alerta
+
+</div>
+<br>
+<form name="Formular">
+    <label>
+        <input type="text" style="font-weight:bold" id="boldat">
+    </label>
+</form>
+<script>
+
+
+
+    function citeste() {
+        const x = document.getElementById('boldat').value;
+        alert(x);
+    }
+    document.getElementById('boldat').addEventListener('blur', citeste)
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

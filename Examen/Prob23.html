@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 23</title>
+    <link href="PaginaCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    23.Inserati un div de dimensiune 150px pe 150px care sa aiba si
+    bodura rosie cu liniute. In momentul in care se da dublu click pe el
+    sa primeasca o culoare de fundal.
+
+</div>
+<br>
+<style>
+    #rede{
+        height: 150px;
+        width: 150px;
+        border: 1px red dashed;
+
+    }
+</style>
+<div id="rede"></div><br>
+<script>
+    let x;
+   x =  document.getElementById('rede');
+    x.addEventListener('dblclick', fundal);
+     function fundal()   {
+        x.style.backgroundColor= 'blue';
+     }
+</script>
+
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>

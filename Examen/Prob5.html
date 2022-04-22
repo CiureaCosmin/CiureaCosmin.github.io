@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    5.Creati o imagine cu efect de rollover astfel: la apasarea
+    butonului de mouse sa apara o imagine, la eliberarea butonului de
+    mouse sa apara alta.
+</div>
+<br>
+<img src="poza2.jpg" id="pozik" width="520" height="520">
+
+     <script>
+         var x = document.getElementById("pozik")
+         x.addEventListener("mousedown", prima);
+         x.addEventListener("mouseup", doua);
+         function prima(){
+         x.src="poza.png";}
+         function doua(){
+             x.src="poza2.jpg";
+         }
+     </script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

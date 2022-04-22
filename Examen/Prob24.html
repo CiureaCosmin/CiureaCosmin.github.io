@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 24</title>
+    <link href="PaginaCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    24.Inserati un element de input. Bordura elementului va fi de 3px
+    punctate si verde. In momentul in care se iese din element sa se
+    afiseze valoarea introdusa intr-un element de tip span.
+
+</div>
+<br>
+<style>
+    #culoare {
+        border: 3px dotted green;
+        width: 200px;
+        height: 100px;
+    }
+</style>
+<input id='culoare' type="text">
+<span id="aici"></span>
+<script>
+    document.getElementById('culoare').addEventListener('blur', arata);
+
+    function arata() {
+        document.getElementById('aici').innerText=document.getElementById('culoare').value;
+    }
+
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>

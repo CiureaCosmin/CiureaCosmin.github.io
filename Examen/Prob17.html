@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 15</title>
+    <link href="PaginaCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    17.Creati un meniu de navigare vertical care are 4 optiuni:
+    Home,News, Contact, About.
+    Formatati meniul in stilul propriu folosind afisarea legaturilor ca
+    elemente block.
+
+</div>
+<br>
+<style>
+    li {
+        display: block;
+        list-style-type: none;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        margin: 0px;
+
+    }
+
+    #weap {
+        border:5px lightblue dashed;
+        display: inline-flex;
+        text-align: left;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 30px;
+        padding-top: 0px;
+        font-style: italic;
+
+
+    }
+    a{
+        color: red;
+    }
+</style>
+<div id="weap">
+    <ul>
+        <li><a href="PaginaPrincipala.html">Home</a></li>
+        <li><a href="PaginaPrincipala.html">News</a></li>
+        <li><a href="PaginaPrincipala.html">Contact</a></li>
+        <li><a href="PaginaPrincipala.html">About</a></li>
+    </ul>
+</div>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>

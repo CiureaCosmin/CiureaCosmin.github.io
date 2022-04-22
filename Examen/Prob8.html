@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 7</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    8.Inserati un text cu opacitate de 0,5.
+    Acesta primeste o umbra si va fi scris cu fontul monotype corsiva in
+    momentul in care se da click dreapta pe un buton
+
+</div>
+<br>
+<div id="opac">Text de exemplu</div>
+<button id="but">Apasa-ma</button>
+<style>
+    #opac {
+        opacity: 0.5;
+        font-size: 50px;
+    }
+    #but{
+        height: auto;
+        width: auto;
+    }
+</style>
+<script>
+    document.getElementById('but').addEventListener('click', click);
+    function click(){
+        document.getElementById('opac').style.fontFamily='monotype corsiva';
+        document.getElementById('opac').style.textShadow='5px 5px 5px';
+    }
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

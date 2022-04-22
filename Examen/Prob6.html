@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 6</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    6.Inserati o lista neordonata cu 6 elemente. In momentul in care se
+    da click pe un element din lista sa dispara.
+
+</div>
+<br>
+<ul>
+    <li>Elementul 1</li>
+    <li>Elementul 2</li>
+    <li>Elementul 3</li>
+    <li>Elementul 4</li>
+    <li>Elementul 5</li>
+    <li>Elementul 6</li>
+</ul>
+<script>
+    x = document.querySelectorAll("li");
+    x.forEach(li => {
+        li.addEventListener('click', function dispari(event) {
+            console.log('li clicked', event);
+            li.setAttribute('style', 'display:none;')
+        });
+    });
+
+
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 10</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    11.Sa se insereze un link
+    la intrarea cu mouse-ul peste link sa se boldeze si sa apara liniuta
+    de subliniere
+    iar la iesire sa dispara
+</div>
+<br>
+<a id="link" href="http://youtube.com">Acesta este linkul</a>
+<style>
+    a {
+        all: unset;
+
+    }
+</style>
+<script>
+    const x = document.getElementById('link');
+    x.addEventListener('mouseover', bold );
+    x.addEventListener('mouseout', resset);
+
+    function bold() {
+
+            x.style.textDecoration = 'underline';
+            x.style.fontWeight = 'bold';
+
+    }
+
+    function resset() {
+        x.style.textDecoration = 'none';
+        x.style.fontWeight = 'normal';
+        }
+
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

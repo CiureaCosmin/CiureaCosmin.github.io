@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 3</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    3.Inserati un textbox si un buton de submit
+    In momentul in care se da click pe buton sa nu se trimita formularul
+    decat daca textboxul are o valoare introdusa
+
+</div>
+<br>
+<form name="formular" action="script.php" method="post" onsubmit="return validare()">
+    <input type="text" name="nume" size="20">
+    <input type="submit" name="trimite" value="Trimite">
+</form>
+
+<script>
+    function validare() {
+        if (document.forms["formular"]["nume"].value =="") {
+            alert("Obligatoriu de completat");
+            return false;
+        }
+
+    }
+</script>
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 14</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    14.Creati 2 elemente de input in care sa se poata introduce parole
+    care au culoarea de fundal galbena si un buton
+    In momentul in care se da click dreapta pe buton cele 2 texboxuri
+    primesc valoarea "merge"
+
+</div>
+<br>
+
+<input id='pass' style="background-color: yellow" type="password">
+<input id='pass1' style="background-color: yellow" type="password">
+<input id='btn' type="button" value="Verifica">
+<script>
+    x = document.getElementById('pass');
+    z = document.getElementById('pass1');
+    document.getElementById('btn').addEventListener('click', merge);
+    document.getElementById('btn').addEventListener('blur', ascunde);
+
+    function ascunde() {
+        x.type = 'password';
+        z.type = 'password';
+        x.value = '';
+        z.value = '';
+
+
+
+    }
+
+    function merge() {
+        x.value = 'merge';
+        z.value = 'merge';
+        x.type = 'text';
+        z.type = 'text';
+
+    }
+</script>
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

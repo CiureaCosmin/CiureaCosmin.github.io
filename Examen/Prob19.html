@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 19</title>
+    <link href="PaginaCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    19.Creati o lista ordonata cu 3 elemente. Elementele sa nu afiseze
+    numerele care apar in mod default la listele ordonate. Cand se da
+    click dreapta pe un element sa se apeleze o functie care ascunde
+    elementul din lista si sa afiseze valoarea intr-un mesaj de alerta.
+
+</div>
+<br>
+<style>
+    li{list-style-type:none;}
+</style>
+
+<ol>
+    <li onclick="schimba(this)">Element1</li>
+    <li onclick="schimba(this)">Element2</li>
+    <li onclick="schimba(this)">Element3</li>
+</ol>
+<script>
+    function schimba(a){
+        a.style.display="none";
+        alert(a.innerText);
+    }
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>

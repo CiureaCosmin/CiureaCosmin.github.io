@@ -1,0 +1,14 @@
+body{
+    background-color: #9c0f66;
+    font-size: 30px;
+    font-family: "Arial";
+}
+button{
+    height: 100px;
+    width: 200px;
+}
+#wrapbtn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

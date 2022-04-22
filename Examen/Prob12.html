@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 10</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    12.Adaugati o imagine cu colturile rotunjite. Aplicati un efect de
+    rollover implementat astfel: la apasarea butonului de mouse sa apara
+    o alta imagine, iar la eliberarea butonului de mouse sa se revina la
+    imaginea initiala
+
+</div>
+<br>
+<img src="poza2.jpg" id="poza" width="500px" height="500">
+<style>
+    img{
+        border-radius: 50px;
+    }
+
+</style>
+<script>
+    document.getElementById('poza').addEventListener('mousedown', dispari);
+    document.getElementById('poza').addEventListener('mouseup', apari);
+    function dispari(){
+        document.getElementById('poza').src='poza.png';
+    }
+    function apari(){
+        document.getElementById('poza').src='poza2.jpg';
+    }
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

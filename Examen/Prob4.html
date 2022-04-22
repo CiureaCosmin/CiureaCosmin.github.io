@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    4.Sa se insereze o poza. <br>
+    La intrarea cu mouse-ul peste poza sa apara o bordura de 10px,
+    punctata, de culoare albastra
+</div>
+<br>
+<img id="pozik" src="poza.png" height="300" width="275">
+
+<script>
+    var x = document.getElementById("pozik")
+    x.addEventListener("mouseenter",apari);
+    x.addEventListener("mouseout",dispari);
+function apari(){
+       x.style.border="10px dotted blue"
+}
+function dispari(){
+        x.style.border="none"
+}
+</script>
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

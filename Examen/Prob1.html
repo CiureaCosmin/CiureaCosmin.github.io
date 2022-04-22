@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 1</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    1.Sa se insereze un link
+    la intrarea cu mouse-ul peste link sa apara textul "Cursorul este pe
+    link"
+    iar la iesire sa apara pe link textul "Cursorul este in alta parte"
+</div><br>
+<a id="link1" href="https://youtube.com">Link</a>
+<div id="wrapbtn" >
+<button id="btnback" onclick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+<script>
+    var x = document.getElementById("link1");
+    x.addEventListener("mouseenter", aintrat);
+    x.addEventListener("mouseout", aiesit);
+    function aintrat(){
+        x.innerText="Cursorul este pe link";
+    }
+    function aiesit(){
+        x.innerText="Cursorul este in alta parte";
+    }
+
+</script>
+
+</body>
+</html>

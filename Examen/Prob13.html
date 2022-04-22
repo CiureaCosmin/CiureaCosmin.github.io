@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 10</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    13.Inserati doua textboxuri
+    Bordura textboxurilor este de 2px, punctata si albastra
+    in momentul in care se iese din primul textbox sa se afiseze
+    valoarea introdusa in cel de-al doilea textbox
+</div>
+<br>
+<style>
+    #text1 , #text2{
+        border: 2px dotted blue;
+    }
+</style>
+<label>
+    <p> Primul textbox <input type="text" id="text1"></p>
+    <p>Al doilea textbox<input type="text" id="text2"></p>
+</label>
+<script>
+    document.getElementById('text1').addEventListener('blur', citeste)
+    function citeste(){
+      var x =  document.getElementById('text1').value
+        document.getElementById('text2').value= x;
+    }
+</script>
+
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 10</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    10.Inserati o imagine si un buton
+    In momentul in care se da click pe buton sa se ascunda imaginea
+    In momentul in care se mai da un click pe acelasi buton, imaginea sa
+    se afiseze din nou
+</div>
+<br>
+<img height="300" width="300" id='pozik' src="poza2.jpg"> <br>
+<button onclick="hide()">Hide</button>
+<script>
+    function hide(){
+       if (document.getElementById('pozik').style.display==='none') {
+           document.getElementById('pozik').style.display='block'; }
+       else{
+           document.getElementById('pozik').style.display='none';
+       }
+    }
+
+</script>
+
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

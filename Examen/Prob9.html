@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 7</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    9.Inserati un text care se va scrie cu italic
+    Acesta isi va schimba alinierea la dreapta in momentul in care se
+    trece cu cursorul mouse-ului peste suprafata lui
+
+</div>
+<br>
+<div  style="text-align: left">
+<div id="sch" >Textul este la stanga</div>
+</div>
+<script>
+    x = document.getElementById('sch');
+    x.addEventListener('mouseover', dreapta);
+    function dreapta(){
+        if (x.style.textAlign=='right'){
+            x.style.textAlign='left';
+            x.innerText='Acum e la stanga';
+
+        }
+        else {
+            x.style.textAlign='right';
+            x.innerText='Acum e la dreapta';
+
+        }
+    }
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

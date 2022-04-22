@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 15</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    16.Sa se insereze un element de tip block. Formatati elementul
+    astfel incat sa aiba fontul verdana si sa fie centrat
+    La intrarea cu mouse-ul peste  element sa apara in cadrul
+    elementului textul "Cursorul este pe element"
+    iar la iesirea mouse-ului sa apara in cadrul elementului textul
+    "Cursorul este in alta parte"
+
+</div>
+<br>
+<style>
+    #tip{
+        font-family: Verdana;
+        text-align: center;
+
+    }
+</style>
+<div id="tip">Elementul</div>
+
+<script>
+    document.getElementById('tip').addEventListener("mouseenter", arata);
+    document.getElementById('tip').addEventListener("mouseleave", ascunde);
+    function arata(){
+        this.innerText='cursorul este pe element';
+    }
+    function ascunde(){
+        this.innerText='cursorul este in alta parte';
+    }
+</script>
+<br>
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+</body>
+</html>

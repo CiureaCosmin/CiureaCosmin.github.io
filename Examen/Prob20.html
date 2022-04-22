@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 20</title>
+    <link href="PaginaCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    20.Inserati un link si un buton. Butonul sa aiba o umbra albastra.
+    In momentul in care se da click pe buton sa se ascunda link-ul. In
+    momentul in care se mai da click pe acelasi buton, link-ul sa se
+    afiseze din nou.
+
+</div>
+<br>
+<a>Link</a>
+<button id="button">Buton</button>
+<style>
+    #button {
+        width: auto;
+        height: auto;
+        box-shadow: 12px 0px 12px blue;
+
+    }
+</style>
+<script>
+    var x = document.getElementById('button');
+    x.addEventListener('click', asc);
+
+    function asc() {
+        if (document.getElementsByTagName('a')[0].style.display == 'none') {
+            document.getElementsByTagName('a')[0].style.display = 'inline';
+        } else {
+            document.getElementsByTagName('a')[0].style.display = 'none';
+        }
+    }
+
+</script>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>

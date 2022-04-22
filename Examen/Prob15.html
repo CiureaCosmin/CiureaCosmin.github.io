@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 15</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    15.Creati o lista ordonata cu 5 elemente. Elementele sa nu afiseze
+    numerele care apar in mod default la listele ordonate
+    Cand se da dublu click pe un element sa se apeleze o functie care
+    ascunde elementul din lista si afiseaza valoarea intr-un mesaj de
+    alerta.
+
+</div>
+<br>
+<style>
+    ol {
+        list-style-type: none;
+    }
+</style>
+<ol>
+    <li value="1" ondblclick=(alerteaza(this))>Element1</li>
+    <li value='2' ondblclick=(alerteaza(this))>Element2</li>
+    <li value="3" ondblclick=(alerteaza(this))>Element3</li>
+    <li value='4' ondblclick=(alerteaza(this))>Element4</li>
+    <li value='5' ondblclick=(alerteaza(this))>Element5</li>
+</ol>
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+<script>
+    function alerteaza(a) {
+        var c = a.value;
+        var b = a.innerText;
+        var x = c + ' ' + b;
+        alert(x);
+        a.style.display = 'none';
+
+    }
+</script>
+</body>
+</html>

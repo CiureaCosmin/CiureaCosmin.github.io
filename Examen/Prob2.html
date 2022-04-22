@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="PaginaCss.css" type="text/css">
+</head>
+<body>
+<div>
+    2. Inserati un text oarecare pe 2 randuri.<br>
+    In cadrul textului sa fie un cuvant pe care daca se da click
+    sa isi schimbe modul de afisare din div in span si invers.
+</div>
+<br>
+<div>Acesta este un text oarecare pe <div id="doua">doua randuri. Apasa pe cuvantul doua.</div></div>
+
+    <script>
+        var x = document.getElementById("doua");
+        x.addEventListener("click", schimba);
+        function schimba(){
+            if (x.style.display=="inline"){
+                x.style.display="block";
+                x.innerText="doua randuri. Apasa pe cuvantul doua.";
+            }
+            else {
+                x.style.display="inline";
+                x.innerText="un rand. Apasa pe cuvantul rand.";
+            }
+        }
+    </script>
+
+
+        <div id="wrapbtn">
+            <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+        </div>
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 15</title>
+    <link href="PaginaCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    18.Creati 2 textboxuri care au culoare de fundal verde si un link
+    In momentul in care se da click dreapta pe link cele 2 textboxuri
+    primesc valoarea "Modificat"
+
+</div>
+<br>
+<input class="1" type="text" style="background-color: green">
+<input class="1" type="text" style="background-color: green">
+<a  onclick="functie()">Link</a>
+<script>
+    function functie(){
+        for (var i=0; i < document.getElementsByClassName('1').length; i++) {
+            document.getElementsByTagName('input')[i].value = 'Modificat';
+        }
+
+    }
+</script>
+
+
+
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>

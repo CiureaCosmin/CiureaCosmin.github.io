@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 21</title>
+    <link href="PaginaCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    22.Inserati un textbox. Bordura textboxului va fi de 1px, continua
+    si rosie. In momentul in care se iese din textbox se afiseaza
+    valoarea introdusa intr-un div.
+
+</div>
+<br>
+<style>
+    #textbox{
+        border: 1px solid red;
+    }
+</style>
+<input type="text" id="textbox" value="">
+<div id="aici"></div>
+
+<script>
+   var x=document.getElementById("textbox");
+
+    x.addEventListener('blur', citeste);
+    function citeste(){
+
+        document.getElementById('aici').innerText=  document.getElementById('textbox').value;
+    }
+
+
+</script>
+
+<div id="wrapbtn">
+    <button id="btnback" onClick="window.location.href='PaginaPrincipala.html'">Go Back</button>
+</div>
+
+
+</body>
+</html>
