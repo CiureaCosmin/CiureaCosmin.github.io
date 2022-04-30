@@ -102,32 +102,10 @@
 	 <td></td>
  </tr>
 </table>
-<h1 style align="center" id="time">Ce saptamana e asta?</h1>
 
-<div class="wrapper">
-<button type="button" onClick="myFunction()">vai</button>
+<div style="text-align: center">
+	<button  onclick="location.href='../index.html'">Go back</button>
 </div>
-
-
-
-<script>
-	function myFunction() {
-		azi = new Date();
-		var primaZi = new Date("01/01/2022");
-		var numarzile = Math.floor((azi - primaZi) / (24 * 60 * 60 * 1000));
-		var rezultat = Math.ceil(( azi.getDay() + 1 + numarzile) / 7);
-
-		if(rezultat % 2 == 0) {
-			document.getElementById('time').innerHTML = "Aceasta saptamana este : PARA"
-		}
-		else {
-			document.getElementById('time').innerHTML = "Aceasta saptamana este : IMPARA"
-		}
-
-
-
-	}
-</script>
 
 </body>
 </html>

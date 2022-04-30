@@ -16,15 +16,13 @@ body{
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 5px;
     background-color: #737373;
     color: #fff;
     width:auto;
     height:auto;
     justify-content: center;
-}
-.nav-links {
-    <!--  background: black;-->
 }
 .nav-links a {
     color: #ffffff;
@@ -78,7 +76,7 @@ ul  {
     text-align: center;
 }
 .dropdown li:hover {
-    background-color: green;
+    background-color: #464b4b;
 }
 .services:hover .dropdown {
     display: block;
@@ -87,44 +85,24 @@ ul  {
 * {
     box-sizing: border-box;
 }
-
-/* Column container */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-    flex: 30%; /* Set the width of the sidebar */
-    background-color: #f1f1f1; /* Grey background color */
-    padding: 20px; /* Some padding */
-}
-
-/* Main column */
-.main {
-    flex: 70%; /* Set the width of the main content */
-    background-color: white; /* White background color */
-    padding: 20px; /* Some padding */
-}
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
-}
 .footer {
     padding: 10px; /* Some padding */
     text-align: center; /* Center text*/
     background: #ddd; /* Grey background */
     margin:0px;
+}
+.mijloc{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+.central{
+    text-align: center;
+    border: 2px #ffffff;
+    border-radius: 5px;
+    border-style: solid;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    display: inline-block;
 }

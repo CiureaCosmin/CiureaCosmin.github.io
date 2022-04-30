@@ -1,2 +1,0 @@
-# CiureaCosmin.github.io
-website
