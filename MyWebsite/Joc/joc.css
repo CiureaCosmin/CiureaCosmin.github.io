@@ -1,0 +1,10 @@
+body{
+background-color: lavender;}
+#alegeri {
+padding-top: 15%;
+    text-align: center;}
+button{
+    width: 200px;
+    height: 150px;
+    font-size: larger;
+}
